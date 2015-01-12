@@ -1,0 +1,54 @@
+1.1 Operacje na plikach w Git'cie.
+
+-  git rm   Polecenie usuwa pliki i foldery z repozytorium.
+            Jeśli chcesz usunąć plik, a jest on już w poczekalni,
+            musisz wpisać na koniec argument -f. Jest to konieczność
+            ze strony Git'a, jako swoiste zabiezpieczenie.
+            Po usunięciu widać potwierdzenie tej czynności
+            w statusie Git'a, po kolejnym zatwierdzeniu statusu
+            informacja ta zostaje usunięta na stałe. Git dalej
+            nie śledzi zmian związanych z tym plikiem.
+
+- git mv    Polecenie zmienia nazwę pliku w postaci:
+            git mv stara_nazwa nowa_nazwa
+            Git zapisuje zmianę nazwy, widoczna jest potem w
+            statusie i log'u. Tak więc dla Git'a jest to nadal
+            ten sam plik.
+
+- git add   Polecenie dodaje do poczekalni plik który został stworzony,
+            bądź w którym zostały wprowadzone zmiany. Można użyć go w
+            taki sposób:  git add prog*
+            Wtedy zostają dodane wszystkie pliki o nazwie rozpoczynającej
+            się na "prog". Można zrobić też inaczej:
+                git add *o.c
+            Wtedy dodaje wszystkie pliki o nazwie zakończonej na literę "o"
+            oraz z rozszerzeniem pliku .c
+
+git commit  Polecenie służy do zatwierdzania wprowadzonych zmian
+            i wpisania zmiany do log'u. Dzięki któremu można śledzić
+            zmiany wprowadzone w plikach. Kiedy, co i przez kogo.
+            Dodając parametr -m można dodać komentarz w pojedyńczych
+            apostrofach (' ').
+
+git status  Polecenie wyświetla status przechowywalni. Wyświetla jakie
+            pliki uległy zmianie i jakie nie zostały wprowadzone do
+            poczekalni.
+
+git log     Polecenie wyświetla spis zmian jakie zostały do tej pory
+            odnotowane, włącznie z dodanymi komentarzami.
+            Dodanie argumentu -# , gdzie # to dowolna cyfra,
+            spowoduje ukazanie się # ostatnich wpisów.
+
+git branch  Polecenie tworzy nową gałąź pracy. Domyślnie jest to "master"
+            Gdy chcemy stworzyć nową wpisujemy tak:
+                git branch nazwa_gałęzi
+
+git checkout    Polecenie to służy do zmiany gałęzi na której się
+                aktualnie znajdujemy. Aby to zrobić należy wpisać:
+                    git checkout nazwa_gałęzi
+
+git diff        Komenda ta pokazuje różnicę która do tej pory została
+                zauważona przez Git'a w niezatwierdzonych zmianach.
+                Wszelkie zmiany w plikach itd.
+
+

@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+main()
+{
+  int liczba1, liczba2, liczba3;
+
+  printf("\n Prosze podac trzy liczby:\n");
+  scanf("%d%d%d",&liczba1,&liczba2,&liczba3);
+
+  printf("\n\nA oto one:\n %d \n %d \n %d \n",liczba1,liczba2,liczba3);
+
+  return 0;
+}

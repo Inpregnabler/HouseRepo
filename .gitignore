@@ -1,0 +1,6 @@
+$ git status
+
+#Nowe ignorowane pliki:
+*.o
+*.a
+*.html
